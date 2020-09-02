@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>onetel design studio </title>
+   </head>
+   <body>
+      <div>
+         <img class="hero-text-box" src="resources/img/home-bg.jpg" alt="business woman">
+         <img class="hero-text-box" src="resources/img/businesswoman.jpg" alt="business woman">
+         <img class="hero-text-box" src="resources/img/Woman-Ipad.jpg" alt="business woman">
+         <h1 class="text">Welcome to<br> Onetel Design Studio</h1>
+         <div class="row">
+            <nav>
+               <div class="vl"></div>
+               <ul class="main-nav">
+                  <span class="dot"></span>
+                  <a href="#" class="logo">NETEL</a>
+                  <li><a href="#"> HOME </a> </li>
+                  <li><a href="#">ABOUT US</a> </li>
+                  <li><a href="#"> PORTFOILO</a> </li>
+                  <li><a href="#"> CONTACT</a> </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div class="row">
+         <section class="section-1 row">
+            <div class="col span-1-of-3 red">
+               <i class="fa fa-laptop icon" style="font-size:36px"></i>
+               <h2>Responsive</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col span-1-of-3 green">
+               <i class="fa fa-mobile-phone icon" style="font-size:36px"></i>
+               <h2>Easy to use</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col span-1-of-3 yellow">
+               <i class="fa fa-life-ring icon"></i>
+               <h2>Quick Support</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+         </section>
+      </div>
+      <div class="row">
+         <section class="section-startup row">
+            <div class="col span-1-of-2">
+               <img class="download" src="resources/img/about-img.jpg" alt="business">
+            </div>
+            <div class="col span-1-of-2">
+               <h2>Startup Business</h2>
+               <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.</p1>
+               <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p1>
+               <a href="about.html" class="btn">LEARN MORE</a>
+            </div>
+         </section>
+      </div>
+      <section class="section-projects">
+         <div class="row">
+            <h2>Recent Projects</h2>
+            <p class="long-copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+         </div>
+      </section>
+      <section class="section-recent-project">
+         <ul class="project-showcase clearfix">
+            <li>
+               <figure class="project-photo ">
+                  <img src="resources/img/img1.jpg" alt="Portfoilo img 1">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img2.jpg" alt="Portfoilo img 2">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img3.jpg" alt="Portfoilo img 3">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img4.jpg" alt="Portfoilo img 4">
+               </figure>
+            </li>
+         </ul>
+         <ul class="project-showcase clearfix">
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img5.jpg" alt="Portfoilo img 5">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img6.jpg" alt="Portfoilo img 6">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img7.jpg" alt="Portfoilo img 7">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img8.jpg" alt="Portfoilo img 8">
+               </figure>
+            </li>
+         </ul>
+      </section>
+      <div class="row">
+         <a href="about.html" class="btn learn-more">View More</a>
+      </div>
+      <script>
+         var myIndex = 0;
+         carousel();
+
+         function carousel() {
+           var i;
+           var x = document.getElementsByClassName("hero-text-box");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "inline-block";
+           setTimeout(carousel, 2000); // Change image every 2 seconds
+         }
+      </script>
+   </body>
+</html>
+<!DOCTYPE html>
+<html lang="eng">
+   <head>
+      <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+      <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <title>onetel design studio </title>
+   </head>
+   <body>
+      <div>
+         <img class="hero-text-box" src="resources/img/home-bg.jpg" alt="business woman">
+         <img class="hero-text-box" src="resources/img/businesswoman.jpg" alt="business woman">
+         <img class="hero-text-box" src="resources/img/Woman-Ipad.jpg" alt="business woman">
+         <h1 class="text">Welcome to<br> Onetel Design Studio</h1>
+         <div class="row">
+            <nav>
+               <div class="vl"></div>
+               <ul class="main-nav">
+                  <span class="dot"></span>
+                  <a href="#" class="logo">NETEL</a>
+                  <li><a href="#"> HOME </a> </li>
+                  <li><a href="#">ABOUT US</a> </li>
+                  <li><a href="#"> PORTFOILO</a> </li>
+                  <li><a href="#"> CONTACT</a> </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+      <div class="row">
+         <section class="section-1 row">
+            <div class="col span-1-of-3 red">
+               <i class="fa fa-laptop icon" style="font-size:36px"></i>
+               <h2>Responsive</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col span-1-of-3 green">
+               <i class="fa fa-mobile-phone icon" style="font-size:36px"></i>
+               <h2>Easy to use</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+            <div class="col span-1-of-3 yellow">
+               <i class="fa fa-life-ring icon"></i>
+               <h2>Quick Support</h2>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+            </div>
+         </section>
+      </div>
+      <div class="row">
+         <section class="section-startup row">
+            <div class="col span-1-of-2">
+               <img class="download" src="resources/img/about-img.jpg" alt="business">
+            </div>
+            <div class="col span-1-of-2">
+               <h2>Startup Business</h2>
+               <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet.</p1>
+               <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p1>
+               <a href="about.html" class="btn">LEARN MORE</a>
+            </div>
+         </section>
+      </div>
+      <section class="section-projects">
+         <div class="row">
+            <h2>Recent Projects</h2>
+            <p class="long-copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+         </div>
+      </section>
+      <section class="section-recent-project">
+         <ul class="project-showcase clearfix">
+            <li>
+               <figure class="project-photo ">
+                  <img src="resources/img/img1.jpg" alt="Portfoilo img 1">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img2.jpg" alt="Portfoilo img 2">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img3.jpg" alt="Portfoilo img 3">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img4.jpg" alt="Portfoilo img 4">
+               </figure>
+            </li>
+         </ul>
+         <ul class="project-showcase clearfix">
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img5.jpg" alt="Portfoilo img 5">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img6.jpg" alt="Portfoilo img 6">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img7.jpg" alt="Portfoilo img 7">
+               </figure>
+            </li>
+            <li>
+               <figure class="project-photo">
+                  <img src="resources/img/img8.jpg" alt="Portfoilo img 8">
+               </figure>
+            </li>
+         </ul>
+      </section>
+      <div class="row">
+         <a href="about.html" class="btn learn-more">View More</a>
+      </div>
+      <script>
+         var myIndex = 0;
+         carousel();
+
+         function carousel() {
+           var i;
+           var x = document.getElementsByClassName("hero-text-box");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "inline-block";
+           setTimeout(carousel, 2000); // Change image every 2 seconds
+         }
+      </script>
+   </body>
+</html>
